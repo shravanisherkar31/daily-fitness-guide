@@ -1,4 +1,6 @@
 .nav-container{
+    background-color: #2f653a;
+    color: #fff;
     display: flex;
     height: 110px;
     width: 100%;
