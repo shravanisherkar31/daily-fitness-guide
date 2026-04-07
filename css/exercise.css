@@ -39,3 +39,153 @@
   color: rgba(255,255,255,0.8);
   line-height: 1.6;
 }
+
+.exercise {
+  background: #f4f7f4;
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #1e4a27;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  font-size: 17px;
+  color: #666;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+}
+
+.exercise-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 36px 28px;
+  text-align: left;
+  border: 2px solid #e0ede0;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.exercise-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 5px;
+  background: linear-gradient(90deg, #2f653a, #64a469);
+}
+
+.exercise-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 48px rgba(155, 224, 169, 0.15);
+  border-color: #2f653a;
+}
+
+.exercise-emoji {
+  font-size: 52px;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.ex-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.beginner { background: #e8f5e9; color: #2e7d32; }
+.intermediate { background: #fff3e0; color: #e65100; }
+.advanced { background: #fce4ec; color: #c62828; }
+
+.exercise-card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e4a27;
+  margin-bottom: 12px;
+}
+
+.exercise-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.ex-details {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  background: #f4f9f4;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.ex-details li {
+  font-size: 13px;
+  color: #444;
+  padding: 4px 0;
+  border-bottom: 1px solid #e0ede0;
+}
+
+.ex-details li:last-child { border-bottom: none; }
+
+.ex-steps {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.ex-steps strong {
+  color: #1e4a27;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.ex-steps ol {
+  padding-left: 18px;
+}
+
+/* TIP BOX */
+.tip-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, #fff3e0, #ffe0c2);
+  border: 2px solid #ffcc80;
+  border-radius: 16px;
+  padding: 24px 32px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #5d3a00;
+  text-align: left;
+}
+
+.tip-emoji { font-size: 36px; flex-shrink: 0; }
+
+@media (max-width: 768px) {
+  .page-hero h1 { font-size: 36px; }
+  .exercise { padding: 50px 20px; }
+}
