@@ -1,0 +1,123 @@
+/* ===== FOOTER ===== */
+.footer {
+  background: linear-gradient(135deg, #1a3d22, #2f653a);
+  color: #fff;
+  padding: 60px 0 0;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-brand p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #a8d5aa;
+}
+
+.footer-logo {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #64a469;
+  background: #e4e4e4;
+}
+
+.footer-section {
+  flex: 1 1 180px;
+}
+
+.footer-section h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fefefe;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.8;
+}
+
+.footer-section p a {
+  color: rgb(255, 249, 249);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section p a:hover { color: #d8d4d3; }
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 10px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.75);
+  font-size: 15px;
+  display: inline-block;
+}
+
+.footer-menu a:hover {
+  color: #f7f4f3;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-btn {
+  display: inline-block;
+  padding: 7px 18px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: background 0.3s, border-color 0.3s;
+  width: fit-content;
+}
+
+.social-btn:hover {
+  background: #ff5722;
+  border-color: #ff5722;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: rgba(255,255,255,0.5);
+  font-size: 13px;
+}
