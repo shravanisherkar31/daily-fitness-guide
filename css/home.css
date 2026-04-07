@@ -152,4 +152,44 @@
   letter-spacing: 1px;
 }
 
+.stats-section {
+  background: linear-gradient(135deg, #1e4a27, #2f653a);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 60px;
+  border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+.stat-item:last-child { border-right: none; }
+
+.stat-num {
+  font-family: 'Oswald', sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: #bab8b7;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: rgba(255,255,255,0.8);
+  margin-top: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .main-heading { font-size: 52px; }
+  .hero-overlay { padding: 40px 24px; }
+  .stat-item { padding: 30px 30px; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); }
+}
 
