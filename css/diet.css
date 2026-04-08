@@ -1,6 +1,7 @@
-/* ===== DIET PAGE ===== */
+
 .diet-hero {
-  background: linear-gradient(135deg, #1b4332, #2d6a4f) !important;
+ background: linear-gradient(90deg, #2f653a, #64a469);
+
 }
 
 .diet {
@@ -62,7 +63,7 @@
   line-height: 1.6;
 }
 
-/* WATER SECTION */
+
 .water-section {
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   padding: 60px 40px;
@@ -114,7 +115,7 @@
   border-left: 4px solid #1976d2;
 }
 
-/* MEAL TIMING */
+
 .meal-timing {
   padding: 70px 40px;
   text-align: center;
