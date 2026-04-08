@@ -2,8 +2,168 @@
 <html>
 <head>
     <title>Diet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/navbar.css"/>
+  <link rel="stylesheet" href="../css/footer.css"/>
+  <link rel="stylesheet" href="../css/exercise.css"/>
+  <link rel="stylesheet" href="../css/diet.css"/>
 </head>
 <body>
+      <div class="nav-container">
+    <div class="nav-brand">
+      <img src="../images/home/main-logo-icon.png" alt="Logo" class="main-logo"/>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="../index.html" class="menu">Home</a></li>
+      <li><a href="exercise.html" class="menu">Exercise</a></li>
+      <li><a href="../pages/diet.html" class="menu active">Diet</a></li>
+      <li><a href="../pages/contact.html" class="menu">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </div>
+
+  <div class="page-hero diet-hero">
+    <div class="page-hero-content">
+      <span class="page-tag"> Eat Right</span>
+      <h1>Healthy Diet Guide</h1>
+      <p>Fuel your body with the right nutrition. Simple tips for a healthier, happier you!</p>
+    </div>
+  </div>
+
+   <section class="diet">
+
+    <!-- Healthy Foods -->
+    <div class="diet-category">
+      <h2 class="section-title"> <img src="../images/diet/healthy-icon.png" height="50px"> Healthy Foods</h2>
+      <p class="section-subtitle">A balanced diet includes a variety of whole, minimally processed foods that nourish your body.</p>
+      <div class="diet-grid">
+        <div class="diet-card">
+          <div class="diet-emoji"><img src="../images/diet/broccoli-icon.png" height="50px"></div>
+          <h3>Broccoli</h3>
+          <p>Rich in fiber, vitamins C & K, and antioxidants. Great for digestion and immunity.</p>
+        </div>
+        <div class="diet-card">
+          <div class="diet-emoji"><img src="../images/diet/carrot-icon.png" height="50px"></div>
+          <h3>Carrots</h3>
+          <p>Packed with beta-carotene for healthy eyesight and glowing skin.</p>
+        </div>
+        <div class="diet-card">
+          <div class="diet-emoji"><img src="../images/diet/oil-icon.png" height="50px"></div>
+          <h3>Olive Oil</h3>
+          <p>Heart-healthy fats that reduce inflammation and support brain function.</p>
+        </div>
+        <div class="diet-card">
+          <div class="diet-emoji"><img src="../images/diet/avocado-icon.png" height="50px"></div>
+          <h3>Avocado</h3>
+          <p>Loaded with healthy monounsaturated fats, potassium, and fiber.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Protein Foods -->
+    <div class="diet-category alt-bg">
+      <h2 class="section-title"><img src="../images/diet/protein-icon.png" height="50px"> Protein Foods</h2>
+      <p class="section-subtitle">Protein builds and repairs muscles, keeps you full longer, and supports a healthy metabolism.</p>
+      <div class="diet-grid">
+        <div class="diet-card">
+          <div class="diet-emoji"><img src="../images/diet/egg-icon.png" height="50px"></div>
+          <h3>Eggs</h3>
+          <p>Complete protein with all essential amino acids. Great for breakfast to keep you full.</p>
+        </div>
+        <div class="diet-card">
+          <div class="diet-emoji"><img src="../images/diet/fish-icon.png" height="50px"></div>
+          <h3>Fish (Salmon)</h3>
+          <p>High in protein and omega-3 fatty acids. Excellent for heart and brain health.</p>
+        </div>
+        <div class="diet-card">
+          <div class="diet-emoji"><img src="../images/diet/beans-icon.png" height="50px"></div>
+          <h3>Lentils & Beans</h3>
+          <p>Plant-based protein powerhouses full of fiber, iron, and essential nutrients.</p>
+        </div>
+        <div class="diet-card">
+          <div class="diet-emoji"><img src="../images/diet/chiken-icon.png" height="50px"></div>
+          <h3>Chicken Breast</h3>
+          <p>Lean protein source that supports muscle growth and keeps calories in check.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fruits & Vegetables -->
+    <div class="diet-category">
+      <h2 class="section-title"><img src="../images/diet/apple-icon.png" height="50px"> Fruits & Vegetables</h2>
+      <p class="section-subtitle">Eat a rainbow of colors every day for vitamins, minerals, and antioxidants your body needs.</p>
+      <div class="diet-grid">
+        <div class="diet-card">
+          <div class="diet-emoji"><img src="../images/diet/banana-icon.png" height="50px"></div>
+          <h3>Banana</h3>
+          <p>Quick energy boost with natural sugars, potassium, and B6 vitamins.</p>
+        </div>
+        <div class="diet-card">
+          <div class="diet-emoji"><img src="../images/diet/orange-icon.png" height="50px"></div>
+          <h3>Orange</h3>
+          <p>Vitamin C powerhouse that boosts immunity and keeps your skin healthy.</p>
+        </div>
+        <div class="diet-card">
+          <div class="diet-emoji"><img src="../images/diet/grapes-icon.png" height="50px"></div>
+          <h3>Grapes</h3>
+          <p>Rich in antioxidants, resveratrol and vitamins that protect your cells.</p>
+        </div>
+        <div class="diet-card">
+          <div class="diet-emoji"><img src="../images/diet/strawberry-icon.png" height="50px"></div>
+          <h3>Strawberries</h3>
+          <p>Low in calories, high in vitamin C, fiber, and disease-fighting antioxidants.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Water -->
+    <div class="water-section">
+      <div class="water-content">
+        <div class="water-icon"><img src="../images/diet/drop-icon.png" height="50px"></div>
+        <div class="water-text">
+          <h2>Water – Your Body's Best Friend</h2>
+          <p>Your body is about 60% water. Staying hydrated is one of the most important things you can do for your health!</p>
+          <ul class="water-tips">
+            <li> Drink at least <strong>8 glasses (2 liters)</strong> of water per day</li>
+            <li> Start your morning with a glass of warm water</li>
+            <li> Drink before, during, and after workouts</li>
+            <li> Add lemon or cucumber for a refreshing twist</li>
+            <li> Use a water tracker app to build the habit</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Meal Timing -->
+    <div class="meal-timing">
+      <h2 class="section-title"><img src="../images/diet/meal-icon.png" height="50px"> Ideal Meal Timing</h2>
+      <p class="section-subtitle">When you eat matters almost as much as what you eat!</p>
+      <div class="timing-grid">
+        <div class="timing-card">
+          <span class="timing-time">7:00 AM</span>
+          <span class="timing-meal">Breakfast – Your most important meal</span>
+        </div>
+        <div class="timing-card">
+          <span class="timing-time">10:00 AM</span>
+          <span class="timing-meal">  Mid-Morning Snack – Fruit or nuts</span>
+        </div>
+        <div class="timing-card">
+          <span class="timing-time">1:00 PM</span>
+          <span class="timing-meal"> Lunch – Balanced & filling</span>
+        </div>
+        <div class="timing-card">
+          <span class="timing-time">4:00 PM</span>
+          <span class="timing-meal"> Evening Snack – Light & healthy</span>
+        </div>
+        <div class="timing-card">
+          <span class="timing-time">7:00 PM</span>
+          <span class="timing-meal"> Dinner – Light, 2–3 hrs before sleep</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
     
 </body>
 </html>
